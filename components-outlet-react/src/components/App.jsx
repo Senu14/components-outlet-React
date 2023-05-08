@@ -1,25 +1,31 @@
-import React,{ useState} from 'react'; //Adding React Hook
-import './App.css';
-import Header from './Header';
-import ContactList from'./ContactList';
-// import Footer from './Footer';
-import AddForm from './AddForm';
+import {
+  createBrowserRouter, 
+  createRoutesFromElements,
+  Route, 
+  RouterProvider
+} from 'react-router-dom'
 
+
+// pages
+import Home from './Pages/Home'
+import SimpleForm from './Pages/SimpleForm'
+
+// layouts
+import CollectedRoot from '../Collector/CollectedRoot'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<CollectedRoot />}>
+      <Route index element={<Home />} />
+      <Route path="SimpleForm" element={<SimpleForm />} />
+    </Route>
+  )
+)
 
 function App() {
-
-  const [contacts, setContacts] = useState([]);
- 
   return (
-    <div>
-      <Header />
-      <AddForm />
-      <ContactList  contacts={contacts} />
-      {/* <Footer /> */}
-    </div>
-   
-   
+    <RouterProvider router={router} />
   );
 }
 
-export default App;
+export default App
