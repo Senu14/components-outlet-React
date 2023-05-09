@@ -10,7 +10,7 @@ import {
 import Home from './Pages/Home'
 import SimpleForm from './Pages/SimpleForm'
 import Products from './Pages/Products'
-import useFatch  from 'useFatch'
+import useFatch  from '../Hooks/fetch'
 
 // layouts
 import CollectedRoot from '../Collector/CollectedRoot'
