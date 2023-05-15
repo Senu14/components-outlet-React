@@ -25,7 +25,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path= "/BasicComponents" element={<BasicComponents />} />
 
-        <Route path="/Products" element={<Products items={apiData}/>} />
+        <Route path="/Products" element={<Products />} />
         <Route path="/SimpleForm" element={<SimpleForm />} />
         <Route path=":Category" element={<Category />} />
         <Route path=":id" element={<Details />} />

@@ -5,9 +5,12 @@ export default function CollectedRoot() {
     <div className="collected-root">
       <header>
         <nav>
-          <h1>New Routers</h1>
+          <h1>Peace and Harmony</h1>
           <NavLink to="/">Home</NavLink>
           <NavLink to="SimpleForm">SimpleForm</NavLink>
+          <NavLink to="Products">Products</NavLink>
+          <NavLink to="Category">Category</NavLink>
+          <NavLink to="id">Details</NavLink>
         </nav>
       </header>
       <main>

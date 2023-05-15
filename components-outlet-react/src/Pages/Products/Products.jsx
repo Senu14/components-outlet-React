@@ -1,8 +1,8 @@
 import React from "react";
 import { useOutlet } from "react-router-dom";
 import { useFetch } from "../../Hooks/fetch";
-import Pagination from "../../Components/Pagination";
-import Card from "../../Components/Cards/Card";
+import Pagination from "../../components/Pagination";
+import  Card  from "../../components/Cards/Card"
 
 const Products = () => {
 
